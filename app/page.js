@@ -4,9 +4,9 @@ import Category from "./Category"
 
 export default () => (
     <main>
-        <section>
+        <section className="text-center bg-gradient-to-b from-[#6943ff] to-[#2f2ce9]">
             <p>Your Result</p>
-            <div>
+            <div className="rounded-full bg-gradient-to-b from-[#4d21c9]">
                 <p>76</p>
                 <p>of 100</p>
             </div>
