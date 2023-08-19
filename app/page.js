@@ -1,4 +1,6 @@
-import Image from "next/image";
+import UList from "@/components/UList"
+import data from "./data.json"
+import Category from "./Category"
 
 export default () => (
     <main>
@@ -13,13 +15,10 @@ export default () => (
         </section>
         <section>
             <p>Summary</p>
-            <ul>
-                <li>
-                    <Image src="/icon-reaction.svg" width="20" height="20" />
-                    <p>Reaction</p>
-                    <p>80 / 100</p>
-                </li>
-            </ul>
+            <UList
+                items={data}
+                itemHandler={item => <Category {...item} />}
+            />
         </section>
         <button>Continue</button>
     </main>
